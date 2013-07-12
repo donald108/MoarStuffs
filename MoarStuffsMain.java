@@ -21,7 +21,7 @@ import cpw.mods.fml.common.network.NetworkMod;
  */
  
  //Turn ON World Generation of Copper, and any other ores.
- bollean GEN = true;
+ boolean GEN = true;
  
 @Mod(
 	modid=Reference.MOD_ID, 
