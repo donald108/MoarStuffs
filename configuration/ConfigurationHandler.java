@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.logging.Level;
 
 import MoarStuffs.lib.Reference;
+import MoarStuffs.lib.id.BlockIds;
 
 import cpw.mods.fml.common.FMLLog;
 
@@ -26,7 +27,7 @@ public class ConfigurationHandler {
             configuration.load();
             
             /*Block Config*/
-            
+            BlockIds.ORECOPPER  = configuration.getBlock(Configuration.CATEGORY_BLOCK, "Copper Ore", BlockIds.ORECOPPER_DEFAULT).getInt();
             
         } catch(Exception e){
             FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + " had a problem loading its config");

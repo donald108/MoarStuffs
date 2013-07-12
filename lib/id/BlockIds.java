@@ -9,4 +9,7 @@ public class BlockIds {
 	/*Default Block ids*/
 	public static int ORECOPPER_DEFAULT =2930;
 	
+	/*Variable ids*/
+	public static int ORECOPPER;
+	
 }
