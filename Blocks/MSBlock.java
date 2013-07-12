@@ -10,21 +10,24 @@ import net.minecraft.block.Block;
  *
  */
 public class MSBlock {
-	
+	//Declare the blocks/items
 	public static Block copperOre;
 
 	public static void init() {
-		
+		//Init the block/Items add crafting
 		copperOre = new BlockcopperOre(BlockIds.ORECOPPER).setUnlocalizedName(BNames.copperOre);
 		
 	}
+	//Regester the block
+	GameRegistry.registerBlock(BlockcopperOre, BNames.copperOre);
 	
-	GameRegistry.registerBlock(BlockcopperOre, BNames.COPPER);
+	//Regester the block/item
+	LanaguageLegistry.addName(BlockcopperOre, BNames.copperOre);
 	
-	LanaguageLegistry.addName(BlockcopperOre, BNames.COPPER);
-	
+	//Add the localistation
 	 LanguageRegistry.instance().addStringLocalization("itemGroup.MSBlocks", "en_US", "MS Blocks");
 	 
+	 //Add the harvest values
 	 MinecraftForge.setBlockHarvestLevel(copperOre, "pickaxe", 2);
 
 }
