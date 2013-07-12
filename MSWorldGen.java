@@ -8,6 +8,7 @@ package MoarStuff.gen
 *bit messay - but will do
 *turn on/off copperOre Gen!
 **Code from FE2 - by a friend of donald108.
+*Need to add folder gen!
 */
 
 import java.util.Random;
