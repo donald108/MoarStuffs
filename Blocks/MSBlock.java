@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 
 /*
  *Author: Glassesofdoom (Anthony Anderson)
- *Last edit: 7/12/2013 By: Glassesofdoom (Anthony Anderson)
+ *Last edit: 7/12/2013 By: donald108 {Paul Graham}
  *
  */
 public class MSBlock {
@@ -18,5 +18,13 @@ public class MSBlock {
 		copperOre = new BlockcopperOre(BlockIds.ORECOPPER).setUnlocalizedName(BNames.copperOre);
 		
 	}
+	
+	GameRegistry.registerBlock(BlockcopperOre, BNames.COPPER);
+	
+	LanaguageLegistry.addName(BlockcopperOre, BNames.COPPER);
+	
+	 LanguageRegistry.instance().addStringLocalization("itemGroup.MSBlocks", "en_US", "MS Blocks");
+	 
+	 MinecraftForge.setBlockHarvestLevel(copperOre, "pickaxe", 2);
 
 }
