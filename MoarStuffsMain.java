@@ -1,6 +1,7 @@
 package MoarStuffs;
 
 import java.io.File;
+import java.util.Random; //JIC :)
 
 import MoarStuffs.blocks.MSBlock;
 import MoarStuffs.configuration.ConfigurationHandler;
